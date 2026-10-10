@@ -180,3 +180,57 @@ AI: I renamed the folder to `Challenges/`, updated current documentation referen
 User: I clarified that this project is now tracked as a Git repository. I requested that any future file or folder removal or move be performed through Git so that the repository retains an accurate history. I said that I would correct the current rename manually.
 
 AI: I added the Git-aware structural-change rule to `AGENTS.md`: use Git operations such as `git mv` and `git rm` for tracked renames, moves, and removals, while still updating all affected workspace references. I did not alter the current folder rename.
+
+## 2026-10-10 11:44:12 +02:00 — Peer landscape for comparison and outreach
+
+User: I asked for a new `Peers/` folder to track both organisations with which we might establish application-validation links and optical-neuromorphic / photonic-computing ventures against which we can compare ourselves. I named Lightmatter and Lightelligence as initial examples and described a Spanish programmable-photonics company with a reconfigurable hexagonal mesh. I asked for a serious broader search.
+
+AI: I created `Peers/` and an internal landscape index. I identified the Spanish company as iPronics, a Universitat Politècnica de València spin-off with documented programmable hexagonal-mesh work. I added separate evidence-backed notes for Lightmatter, Lightelligence, iPronics, Q.ANT, Lumai, and Akhetonics, distinguishing their public product claims from the project's internal positioning assessment. I also added Laser Zentrum Hannover as a concrete prospective laser-process-monitoring validation contact, while making clear that no partnership or access is established. `AGENTS.md`, `README.md`, and `Project_Memory.md` now recognise this workspace category.
+
+## 2026-10-10 12:40:23 +02:00 — Peer-note attribution and Zotero evidence test
+
+User: I asked for peer notes to make the subject of each statement unambiguous: what an external organisation says or demonstrates must be clearly separated from what it means for us, how we compare ourselves, and what we should check. I also asked to add research publications where possible instead of relying only on companies' self-descriptions, and to test the Zotero integration by adding the sources to a new `Spinoff` collection.
+
+AI: I added an explicit peer-note attribution rule to `AGENTS.md` and rewrote all current notes with reader-clear headings separating their public record, independent technical evidence, implications for our project, our positioning, outreach hypotheses, and our risks. I added a curated source file, `Peers/Peer_Research_References.bib`, containing four DOI-verified papers. Zotero imported all four entries into the selected `Spinoff` collection: Shen et al. (2017; Lightmatter scientific lineage), Hua et al. (2025; Lightelligence PACE system), On et al. (2024; iPronics hexagonal mesh), and Spall et al. (2020; Lumai scientific lineage). The notes explicitly state when a paper supports a precursor or application fit rather than independently validating a current commercial product.
+
+## 2026-10-10 12:42:41 +02:00 — PDF attachments deferred
+
+User: After confirming that the Zotero records had been imported, I initially asked for PDF attachments to be added as well, then decided to defer that work for now.
+
+AI: I did not download or attach any PDFs. The four imported records retain their DOI metadata in the `Spinoff` collection, so open-access PDFs can be attached later to selected items without repeating the bibliographic search.
+
+## 2026-10-10 12:47:28 +02:00 — Startup tags requested for Zotero references
+
+User: I asked for the imported Zotero references to be tagged with the startup to which each publication relates.
+
+AI: I mapped the intended tags as `Lightmatter`, `Lightelligence`, `iPronics`, and `Lumai` for the four imported records. The available local Zotero API and Connector can read records and create imports but cannot update tags on existing items, while the Zotero Desktop window is not exposed to the available UI-control surface. I did not create duplicate records with tags or modify Zotero's database directly. The tag update remains pending a writable Zotero UI or API route.
+
+## 2026-10-10 12:49:45 +02:00 — Spin-off Zotero group library detected
+
+User: I created a new Zotero group library for the spin-off and asked whether it was visible through the integration.
+
+AI: I verified that the group library `Spin-off` is locally synchronised, visible as group library `L5` (group ID `6712327`), and marked editable. A separate collection named `Spin-off` still exists inside `My Library`; these are distinct Zotero targets and must not be confused when importing or organising references.
+
+## 2026-10-10 12:52:20 +02:00 — Group-library tags verified
+
+User: I removed the former personal-library collection, moved the references into the `Spin-off` group library, added startup tags, and asked whether the tags were visible.
+
+AI: I verified four synchronised records in the editable `Spin-off` group library. Their tags are visible and correct: `Lightmatter` on Shen et al. (2017), `Lightelligence` on Hua et al. (2025), `iPronics` on On et al. (2024), and `Lumai` on Spall et al. (2020). The group-library item keys are distinct from the earlier personal-library imports, confirming that the current records belong to the shared library.
+
+## 2026-10-10 13:09:06 +02:00 — Founder-led peer evidence and Keren Bergman identified
+
+User: I asked for a second evidence pass on the companies already in `Peers/` for which no publication had previously been found: identify their co-founders and locate topic-relevant academic work, prioritising papers with a co-founder as last author. I also asked the AI to investigate Wolfram H. P. Pernice and any startups he is connected to. Finally, I described a US woman leading a lab in server optical interconnects and asked the AI to identify her; I subsequently confirmed that she is Keren Bergman.
+
+AI: I corrected and extended the peer evidence. For Q.ANT, I identified founder Michael Förtsch and added his 2015 whispering-gallery-resonator publication as research-background evidence, explicitly not as validation of the current NPU. For Akhetonics, I identified co-founders Michael Kissner and Leonardo Del Bino and added their 2024 JLT architecture paper plus Del Bino's earlier optical-memory research; the note now distinguishes those scientific precursors from commercial-product evidence. I created a founder map for Wolfram Pernice and separate notes for Salience Labs, Pixel Photonics, and Xscape Photonics. The evidence confirms Pernice as co-founder of Salience and Pixel; Linq Photonics and coreX currently document advisory / mentor roles only, despite Linq's "3X serial founder" wording. I identified Keren Bergman as co-founder of Xscape Photonics and recorded an independent last-author Nature Photonics paper on a massively scalable Kerr-comb silicon-photonic link. I also added DOI-verified reference records to `Peers/Peer_Research_References.bib` without importing them into Zotero or attaching PDFs, because no new Zotero write request was made.
+
+## 2026-10-10 13:24:45 +02:00 — Person-to-company relations and further founder search
+
+User: I asked for the peer landscape to show explicit person-to-startup relationships whenever I name an individual. I requested Obsidian hashtags for Wolfram Pernice and Keren Bergman, asked to add Shanhui Fan, Marin Soljačić, and Dirk Englund to the Lightmatter and Lightelligence notes, and asked the AI to investigate Tobias Kippenberg's and Kerry Vahala's current startup activity.
+
+AI: I added `#Wolfram_Pernice` to Pernice, Salience Labs, and Pixel Photonics, and `#Keren_Bergman` to Xscape Photonics. I added a named-people section to both Lightmatter and Lightelligence that distinguishes documented company roles from shared academic lineage and absence of evidence: Englund is Lightmatter's technical advisor; Soljačić is a Lightelligence co-founder; the 2017 foundational paper includes Englund and Soljačić; no formal role for Shanhui Fan at either company was established in the checked sources. I created a Kippenberg note recording co-founderships at LIGENTEC, DEEPLIGHT, LUXTELLIGENCE, and EDWATEC. I created a Vahala note recording his current high-Q resonator research and the negative finding that no current startup role was established in this evidence pass. The landscape index was updated accordingly.
+
+## 2026-10-10 13:29:01 +02:00 — Peer graph refocused on companies
+
+User: I clarified that `Peers/` must contain company notes, not standalone person notes. I explained that founder status is secondary: the relevant question is whether a company involving or emerging from a named researcher's laboratory does something useful in optics and computing. I asked for the previous additions to be reorganised on that basis and specifically asked to remove the separate Pernice card.
+
+AI: I removed the standalone notes for Wolfram Pernice, Tobias Kippenberg, and Kerry Vahala using Git because they were not appropriate graph nodes. I retained the useful information by creating company-centred notes: Linq Photonics and coreX for the Pernice ecosystem, plus LIGENTEC, DEEPLIGHT, LUXTELLIGENCE, and EDWATEC for the Kippenberg ecosystem. Each note records the named research connection, the company’s optical role, its relevance to the SBS project, and causal risks. I did not create a Vahala company note because this search found no current startup relationship supported by sufficient evidence. The `Peers` index now links only company / organisation notes. I also updated `AGENTS.md` so that future peer-landscape work keeps researchers inside organisation notes unless the user explicitly requests a different graph structure.

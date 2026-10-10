@@ -9,6 +9,7 @@ This file defines how project materials are maintained. Follow it for all work i
 - `Project_Memory.md` — reusable project facts, working hypotheses, assumptions, and formulations.
 - `Technical_Specification.md` — the current platform's technical reference, including fixed constraints, current configuration, and configurable parameters.
 - `Applications/`, `Features/`, and `Challenges/` — internal Obsidian notes covering application hypotheses, prospective capabilities, and technical, integration, or deployment challenges.
+- `Peers/` — evidence-backed internal landscape notes on potential comparators, technical peers, and prospective application-validation partners.
 - `Proposal/` — working drafts of the Part B sections. Each proposal section is maintained as a separate English Markdown file and may include clearly labelled internal drafting notes that must be removed before submission.
   - The present drafting scope includes `1A.md`, `1B_i.md`, and `1B_ii.md`; do not draft `1B_iii` until the user explicitly requests it.
 - `Tasks/` — benchmark and application-oriented TDRC tasks, their scientific purpose, experimental variants, compact outputs, and causal bottlenecks.
@@ -66,6 +67,15 @@ This file defines how project materials are maintained. Follow it for all work i
 - First map new material to `Grant_Structure.md`.
 - Then use only relevant, current entries from `Project_Memory.md`.
 - Explicitly identify gaps, unverified assumptions, and information that needs checking.
+
+## Peer-landscape notes
+
+- `Peers/` is an organisation-level graph: create notes for companies, laboratories, or other organisations, not standalone notes for individual people.
+- When the user names a researcher, record that person's documented relationship—founder, advisor, laboratory origin, author, or other role—inside the relevant organisation note. Create a new organisation note only when a concrete photonics / computing venture or enabling company is identified.
+- Use an Obsidian hashtag for a named person when the user specifically requests it; place it in every relevant organisation note rather than creating a person node.
+- In `Peers/` notes, explicitly distinguish the organisation's own public claims from our assessment, comparison, decision, or outreach hypothesis.
+- Use reader-clear headings such as **Their public record**, **Independent technical evidence**, **What this means for our project**, **Our positioning relative to them**, and **Our risks and checks**.
+- State whether a cited publication validates a specific product, only demonstrates a scientific precursor, or merely supports application fit. Do not imply that an academic publication independently validates a company's current marketing or performance claim.
 
 ## Structural maintenance
 

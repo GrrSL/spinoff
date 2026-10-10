@@ -10,6 +10,7 @@ The project explores an SBS-enhanced optoelectronic oscillator as a configurable
 - `Applications/` — application hypotheses, system fit, and causal bottlenecks.
 - `Features/` — prospective capabilities of the SBS-enhanced platform.
 - `Challenges/` — technical, integration, and deployment challenges.
+- `Peers/` — comparator landscape and prospective application-validation partners.
 - `Tasks/` — benchmark and application-oriented TDRC tasks.
 - `Grant_Structure.md` — Part B preparation checklist derived from the call template.
 - `Technical_Specification.md` — technical reference for the current experimental platform.
@@ -22,6 +23,7 @@ The project explores an SBS-enhanced optoelectronic oscillator as a configurable
 - Repository files are maintained in English for sharing with collaborators.
 - Technical details, evidence, and open questions are stored separately from external proposal drafts.
 - Markdown notes are structured for use with Obsidian, including Canvas and wikilinks where appropriate.
+- Peer notes distinguish an organisation's public claims from the project's own comparison, positioning, and outreach assessment.
 
 ## Status
 

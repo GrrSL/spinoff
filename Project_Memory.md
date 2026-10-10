@@ -168,6 +168,15 @@
 - Status: working development direction; resource- and stabilisation-dependent.
 - Documentation: see `Challenges/Seed_Pump_Input_Conditioning.md` and `Features/Pump_Recuperation.md`.
 
+### C-010 — Peer landscape and external-validation prospects
+
+- Statement: the project maintains a structured internal peer landscape covering both photonic-computing comparators and prospective application-validation partners.
+- Source: user, 2026-10-10.
+- Status: confirmed documentation and commercialisation-discovery decision; individual organisation assessments remain research hypotheses unless a relationship is confirmed.
+- Current examples: Lightmatter, Lightelligence, iPronics, Q.ANT, Lumai, Akhetonics, and Laser Zentrum Hannover.
+- Documentation: see [[Peers/README]].
+- Relevant proposal sections: 1B.i, 1B.ii.
+
 ### R-004 — Current signal path and optical access
 
 - Statement: in the current setup, the signal path after the modulator is: circulator, nonlinear fibre, second circulator, optional delay line, then photodetector.
