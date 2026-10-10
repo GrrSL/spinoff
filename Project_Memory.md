@@ -166,7 +166,7 @@
 - Statement: SBS pump operation currently requires on the order of 1 W, and pump recuperation through an optical pump loop is a desirable longer-term feature to reduce externally injected pump power.
 - Source: user, 2026-10-07.
 - Status: working development direction; resource- and stabilisation-dependent.
-- Documentation: see `Limitations/Seed_Pump_Input_Conditioning.md` and `Features/Pump_Recuperation.md`.
+- Documentation: see `Challenges/Seed_Pump_Input_Conditioning.md` and `Features/Pump_Recuperation.md`.
 
 ### R-004 — Current signal path and optical access
 

@@ -8,6 +8,7 @@ This file defines how project materials are maintained. Follow it for all work i
 - `Journal.md` — a concise log of substantive user requests, decisions, and completed work.
 - `Project_Memory.md` — reusable project facts, working hypotheses, assumptions, and formulations.
 - `Technical_Specification.md` — the current platform's technical reference, including fixed constraints, current configuration, and configurable parameters.
+- `Applications/`, `Features/`, and `Challenges/` — internal Obsidian notes covering application hypotheses, prospective capabilities, and technical, integration, or deployment challenges.
 - `Proposal/` — working drafts of the Part B sections. Each proposal section is maintained as a separate English Markdown file and may include clearly labelled internal drafting notes that must be removed before submission.
   - The present drafting scope includes `1A.md`, `1B_i.md`, and `1B_ii.md`; do not draft `1B_iii` until the user explicitly requests it.
 - `Tasks/` — benchmark and application-oriented TDRC tasks, their scientific purpose, experimental variants, compact outputs, and causal bottlenecks.
@@ -66,6 +67,13 @@ This file defines how project materials are maintained. Follow it for all work i
 - Then use only relevant, current entries from `Project_Memory.md`.
 - Explicitly identify gaps, unverified assumptions, and information that needs checking.
 
+## Structural maintenance
+
+- When the user asks to rename, move, merge, split, or otherwise restructure a project file or folder, treat the change as repository-wide rather than local.
+- When Git tracks the project, perform file and folder renames or removals through Git (for example, `git mv` or `git rm`) so that history records the structural change correctly. Do not replace this with an ordinary filesystem move or deletion.
+- Update all affected Markdown links, Obsidian wikilinks, directory maps, documentation references, and maintenance instructions in the same change.
+- Search the workspace after the update for obsolete paths or names; retain historical references in `Journal.md` only when they accurately describe the project state at that time.
+
 ## Audience modes
 
 - **Internal mode** is for the user and collaborators. It may be detailed, caveat-rich, technically specific, and use Obsidian wikilinks, open questions, and competing hypotheses.
@@ -79,7 +87,7 @@ This file defines how project materials are maintained. Follow it for all work i
 
 ## Bottlenecks and risks
 
-- In application, feature, and limitation notes, write bottlenecks as human-readable causal statements, not as unqualified research instructions.
+- In application, feature, and challenge notes, write bottlenecks as human-readable causal statements, not as unqualified research instructions.
 - Prefer this structure: **if** a condition occurs or a limitation applies, **then** state the technical consequence and explain why it obstructs the intended goal.
 - State the goal or required operating condition before describing a risk, so the reader understands what the risk threatens.
 - Use an action item such as “measure”, “determine”, or “validate” only after the risk itself has been made explicit.

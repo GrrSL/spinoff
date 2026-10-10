@@ -9,7 +9,7 @@ The project explores an SBS-enhanced optoelectronic oscillator as a configurable
 - `Proposal/` — external-audience drafts of the ERC PoC Part B sections and separate internal drafting notes.
 - `Applications/` — application hypotheses, system fit, and causal bottlenecks.
 - `Features/` — prospective capabilities of the SBS-enhanced platform.
-- `Limitations/` — integration and deployment limitations.
+- `Challenges/` — technical, integration, and deployment challenges.
 - `Tasks/` — benchmark and application-oriented TDRC tasks.
 - `Grant_Structure.md` — Part B preparation checklist derived from the call template.
 - `Technical_Specification.md` — technical reference for the current experimental platform.

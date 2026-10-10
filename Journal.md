@@ -154,7 +154,29 @@
 - User: I requested a README and a `.gitignore` file in preparation for turning the project folder into a GitHub repository. I specified that PDF files must not be uploaded.
 - AI: I created `README.md` with a concise project overview and repository map, and added `.gitignore` with a repository-wide `*.pdf` exclusion. Markdown, Obsidian Canvas, and other working materials remain trackable.
 
+## 2026-10-08 09:46:05 +02:00 — Zotero local-library access
+
+- User: I asked how to make my local Zotero library available to the AI. I noted that most PDF attachments may not be stored locally, although the bibliographic records are present in Zotero.
+- AI: I checked the Zotero integration status, enabled Zotero's local API preference, and created a backup of the previous preference file. The API has not started because Zotero was not restarted automatically; the user must fully quit and reopen Zotero. PDF attachments are not required for metadata search, citation lookup, or BibTeX export.
+
 ## 2026-10-07 16:41:34 +02:00 — Dedicated technical specification
 
 - User: I asked for a dedicated file containing the technical specification of the experimental setup because the general project record was not sufficiently precise for technical reference. I provided the current SBS bandwidth, Brillouin frequency shift, fibre length, delay, configurable delay-loop options, and available AWG configurations.
 - AI: I created `Technical_Specification.md` as the technical single source of truth. I separated physical constraints, current configuration, configurable parameters, AWG limitations, and missing information required for a complete specification. I also linked this file from `AGENTS.md` and `Project_Memory.md`.
+## 2026-10-08 09:48:47 +02:00
+
+User: I confirmed that Zotero had been closed after the earlier configuration step and that I had restarted it.
+
+AI: I verified that the Zotero local API is now reachable and that the connector is running. The project can access the bibliographic metadata stored in the local Zotero library even when attachment PDFs are not stored locally. An initial inventory command exposed a Windows console-encoding issue only; rerunning it with UTF-8 output confirmed access to the library records. Future work can search the library by topic, author, title, or tag; selected references can be exported as BibTeX or used to support proposal drafting.
+
+## 2026-10-10 11:11:37 +02:00 — Challenges folder and structural-maintenance rule
+
+User: I asked to rename the `Limitations/` folder to `Challenges/`. I also requested a durable working rule: when I ask to rename or move project material, the change must be reflected everywhere it affects the workspace, including the project guidance.
+
+AI: I renamed the folder to `Challenges/`, updated current documentation references in `README.md` and `Project_Memory.md`, and added a repository-wide structural-maintenance rule to `AGENTS.md`. Historical journal entries retain their original `Limitations/` wording because they record the name in use at the time.
+
+## 2026-10-10 11:20:02 +02:00 — Git-aware structural changes
+
+User: I clarified that this project is now tracked as a Git repository. I requested that any future file or folder removal or move be performed through Git so that the repository retains an accurate history. I said that I would correct the current rename manually.
+
+AI: I added the Git-aware structural-change rule to `AGENTS.md`: use Git operations such as `git mv` and `git rm` for tracked renames, moves, and removals, while still updating all affected workspace references. I did not alter the current folder rename.
